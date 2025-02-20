@@ -20,6 +20,15 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('12345678'),
             'validation_code' => rand(100000, 999999),
             'validation_code_expires_at' => now()->addMinutes(10),
+
+        ]);
+
+        User::create([
+            'name' => 'Lynda Duarte',
+            'email' => 'duartelynda1402@gmail.com',
+            'password' => bcrypt('12345678'),
+            'validation_code' => rand(100000, 999999),
+            'validation_code_expires_at' => now()->addMinutes(10),
         ]);
 
 
