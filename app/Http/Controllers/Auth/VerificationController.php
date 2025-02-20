@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Mail;
 class VerificationController extends Controller
 {
 
-    public function sendValidationCode(LoginRequest $request): \Illuminate\Http\RedirectResponse
+    public function loginValidation(LoginRequest $request): \Illuminate\Http\RedirectResponse
     {
 
         $user = User::where('email', $request->email)->first();
